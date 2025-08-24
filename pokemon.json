@@ -1,0 +1,624 @@
+[
+    {
+        "model": "viewer.genre",
+        "pk": 1,
+        "fields": {
+            "name": "Comedy"
+        }
+    },
+    {
+        "model": "viewer.genre",
+        "pk": 2,
+        "fields": {
+            "name": "Horror"
+        }
+    },
+    {
+        "model": "viewer.genre",
+        "pk": 3,
+        "fields": {
+            "name": "Thriller"
+        }
+    },
+    {
+        "model": "viewer.genre",
+        "pk": 4,
+        "fields": {
+            "name": "Action"
+        }
+    },
+    {
+        "model": "viewer.genre",
+        "pk": 5,
+        "fields": {
+            "name": "Drama"
+        }
+    },
+    {
+        "model": "viewer.genre",
+        "pk": 6,
+        "fields": {
+            "name": "Science Fiction"
+        }
+    },
+    {
+        "model": "viewer.genre",
+        "pk": 7,
+        "fields": {
+            "name": "Romance"
+        }
+    },
+    {
+        "model": "viewer.genre",
+        "pk": 8,
+        "fields": {
+            "name": "Adventure"
+        }
+    },
+    {
+        "model": "viewer.genre",
+        "pk": 9,
+        "fields": {
+            "name": "Fantasy"
+        }
+    },
+    {
+        "model": "viewer.genre",
+        "pk": 10,
+        "fields": {
+            "name": "Animation"
+        }
+    },
+    {
+        "model": "viewer.genre",
+        "pk": 11,
+        "fields": {
+            "name": "Mystery"
+        }
+    },
+    {
+        "model": "viewer.genre",
+        "pk": 12,
+        "fields": {
+            "name": "Biography"
+        }
+    },
+    {
+        "model": "viewer.genre",
+        "pk": 13,
+        "fields": {
+            "name": "History"
+        }
+    },
+    {
+        "model": "viewer.genre",
+        "pk": 14,
+        "fields": {
+            "name": "Musical"
+        }
+    },
+    {
+        "model": "viewer.genre",
+        "pk": 15,
+        "fields": {
+            "name": "Crime"
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 1,
+        "fields": {
+            "title": "Titanic",
+            "genre": 5,
+            "rating": 10,
+            "released": "1997-12-09",
+            "description": "Titanic was the most expensive film ever made at the time, with a production budget of $200 million. Filming took place from July 1996 to March 1997."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 2,
+        "fields": {
+            "title": "The Godfather",
+            "genre": 15,
+            "rating": 9.8,
+            "released": "1972-03-24",
+            "description": "A crime saga chronicling the powerful Italian-American Corleone family."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 3,
+        "fields": {
+            "title": "The Dark Knight",
+            "genre": 4,
+            "rating": 9.7,
+            "released": "2008-07-18",
+            "description": "Batman faces the Joker, a criminal mastermind causing chaos in Gotham."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 4,
+        "fields": {
+            "title": "Inception",
+            "genre": 6,
+            "rating": 9.0,
+            "released": "2010-07-16",
+            "description": "A thief who steals corporate secrets through dream-sharing technology."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 5,
+        "fields": {
+            "title": "Pulp Fiction",
+            "genre": 15,
+            "rating": 9.3,
+            "released": "1994-10-14",
+            "description": "Intersecting stories of crime and redemption in Los Angeles."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 6,
+        "fields": {
+            "title": "Schindler's List",
+            "genre": 13,
+            "rating": 9.4,
+            "released": "1993-12-15",
+            "description": "The true story of a man who saved Jews during the Holocaust."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 7,
+        "fields": {
+            "title": "Forrest Gump",
+            "genre": 5,
+            "rating": 9.2,
+            "released": "1994-07-06",
+            "description": "A man with a kind heart witnesses decades of American history."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 8,
+        "fields": {
+            "title": "The Matrix",
+            "genre": 6,
+            "rating": 9.0,
+            "released": "1999-03-31",
+            "description": "A hacker learns the shocking truth about his reality."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 9,
+        "fields": {
+            "title": "Star Wars: A New Hope",
+            "genre": 9,
+            "rating": 8.9,
+            "released": "1977-05-25",
+            "description": "A young farmer joins a rebellion against a galactic empire."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 10,
+        "fields": {
+            "title": "Avengers: Endgame",
+            "genre": 4,
+            "rating": 8.8,
+            "released": "2019-04-26",
+            "description": "The Avengers assemble for a final battle against Thanos."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 11,
+        "fields": {
+            "title": "The Shawshank Redemption",
+            "genre": 5,
+            "rating": 9.9,
+            "released": "1994-09-23",
+            "description": "Two imprisoned men bond over years, finding solace and redemption."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 12,
+        "fields": {
+            "title": "Jurassic Park",
+            "genre": 8,
+            "rating": 8.6,
+            "released": "1993-06-11",
+            "description": "Dinosaurs are brought back to life in a theme park with deadly consequences."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 13,
+        "fields": {
+            "title": "The Lion King",
+            "genre": 10,
+            "rating": 9.1,
+            "released": "1994-06-15",
+            "description": "A young lion prince flees his kingdom before learning his true destiny."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 14,
+        "fields": {
+            "title": "Gladiator",
+            "genre": 4,
+            "rating": 8.7,
+            "released": "2000-05-05",
+            "description": "A Roman general seeks revenge against a corrupt emperor."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 15,
+        "fields": {
+            "title": "Interstellar",
+            "genre": 6,
+            "rating": 9.1,
+            "released": "2014-11-07",
+            "description": "A team travels through a wormhole to find a new home for humanity."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 16,
+        "fields": {
+            "title": "Parasite",
+            "genre": 5,
+            "rating": 9.0,
+            "released": "2019-05-30",
+            "description": "A poor family schemes to infiltrate a wealthy household."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 17,
+        "fields": {
+            "title": "The Silence of the Lambs",
+            "genre": 3,
+            "rating": 9.0,
+            "released": "1991-02-14",
+            "description": "An FBI trainee seeks help from a cannibal to catch another killer."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 18,
+        "fields": {
+            "title": "Joker",
+            "genre": 5,
+            "rating": 8.8,
+            "released": "2019-10-04",
+            "description": "An aspiring comedian descends into madness in Gotham City."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 19,
+        "fields": {
+            "title": "The Avengers",
+            "genre": 4,
+            "rating": 8.5,
+            "released": "2012-05-04",
+            "description": "Earth's mightiest heroes team up to fight an alien invasion."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 20,
+        "fields": {
+            "title": "Frozen",
+            "genre": 10,
+            "rating": 8.0,
+            "released": "2013-11-27",
+            "description": "Two sisters struggle to control magical powers and save their kingdom."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 21,
+        "fields": {
+            "title": "Finding Nemo",
+            "genre": 10,
+            "rating": 8.5,
+            "released": "2003-05-30",
+            "description": "A clownfish searches for his missing son across the ocean."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 22,
+        "fields": {
+            "title": "The Departed",
+            "genre": 15,
+            "rating": 8.9,
+            "released": "2006-10-06",
+            "description": "An undercover cop and a mole in the police try to expose each other."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 23,
+        "fields": {
+            "title": "Black Panther",
+            "genre": 4,
+            "rating": 8.4,
+            "released": "2018-02-16",
+            "description": "T'Challa returns home to lead Wakanda but faces internal and external threats."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 24,
+        "fields": {
+            "title": "The Wolf of Wall Street",
+            "genre": 5,
+            "rating": 8.7,
+            "released": "2013-12-25",
+            "description": "The rise and fall of a stockbroker involved in corruption and fraud."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 25,
+        "fields": {
+            "title": "Guardians of the Galaxy",
+            "genre": 8,
+            "rating": 8.5,
+            "released": "2014-08-01",
+            "description": "A group of intergalactic misfits must save the galaxy from destruction."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 26,
+        "fields": {
+            "title": "Coco",
+            "genre": 10,
+            "rating": 8.8,
+            "released": "2017-11-22",
+            "description": "A boy travels to the Land of the Dead to uncover his family's secrets."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 27,
+        "fields": {
+            "title": "Toy Story",
+            "genre": 10,
+            "rating": 8.5,
+            "released": "1995-11-22",
+            "description": "Toys come to life when humans aren't around, leading to wild adventures."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 28,
+        "fields": {
+            "title": "Braveheart",
+            "genre": 13,
+            "rating": 8.6,
+            "released": "1995-05-24",
+            "description": "The story of William Wallace and Scotland's fight for freedom."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 29,
+        "fields": {
+            "title": "Django Unchained",
+            "genre": 13,
+            "rating": 8.8,
+            "released": "2012-12-25",
+            "description": "A freed slave sets out to rescue his wife from a cruel plantation owner."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 30,
+        "fields": {
+            "title": "The Prestige",
+            "genre": 11,
+            "rating": 8.9,
+            "released": "2006-10-20",
+            "description": "Two magicians engage in a battle of wits and illusions."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 31,
+        "fields": {
+            "title": "Up",
+            "genre": 10,
+            "rating": 8.7,
+            "released": "2009-05-29",
+            "description": "An elderly man and a boy go on an adventure in a flying house."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 32,
+        "fields": {
+            "title": "Shrek",
+            "genre": 10,
+            "rating": 8.3,
+            "released": "2001-05-18",
+            "description": "An ogre embarks on a quest to rescue a princess with his donkey friend."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 33,
+        "fields": {
+            "title": "The Incredibles",
+            "genre": 10,
+            "rating": 8.4,
+            "released": "2004-11-05",
+            "description": "A family of superheroes hides their powers while living a suburban life."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 34,
+        "fields": {
+            "title": "The Social Network",
+            "genre": 12,
+            "rating": 8.6,
+            "released": "2010-10-01",
+            "description": "The founding of Facebook and the lawsuits that followed."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 35,
+        "fields": {
+            "title": "Goodfellas",
+            "genre": 15,
+            "rating": 9.0,
+            "released": "1990-09-19",
+            "description": "The rise and fall of a mob associate over several decades."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 36,
+        "fields": {
+            "title": "Casablanca",
+            "genre": 7,
+            "rating": 8.9,
+            "released": "1942-11-26",
+            "description": "A nightclub owner in Casablanca must choose between love and duty."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 37,
+        "fields": {
+            "title": "La La Land",
+            "genre": 14,
+            "rating": 8.3,
+            "released": "2016-12-09",
+            "description": "A jazz musician and an aspiring actress fall in love in Los Angeles."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 38,
+        "fields": {
+            "title": "Whiplash",
+            "genre": 14,
+            "rating": 8.6,
+            "released": "2014-10-10",
+            "description": "A young drummer faces abuse from his perfectionist instructor."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 39,
+        "fields": {
+            "title": "The Pianist",
+            "genre": 12,
+            "rating": 8.9,
+            "released": "2002-09-25",
+            "description": "A Polish Jewish musician struggles to survive the Holocaust."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 40,
+        "fields": {
+            "title": "Spirited Away",
+            "genre": 9,
+            "rating": 9.1,
+            "released": "2001-07-20",
+            "description": "A girl navigates a magical world to save her parents."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 41,
+        "fields": {
+            "title": "The Green Mile",
+            "genre": 5,
+            "rating": 9.0,
+            "released": "1999-12-10",
+            "description": "A prison guard encounters a gentle giant with mysterious powers."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 42,
+        "fields": {
+            "title": "A Beautiful Mind",
+            "genre": 12,
+            "rating": 8.7,
+            "released": "2001-12-21",
+            "description": "The life of brilliant mathematician John Nash."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 43,
+        "fields": {
+            "title": "Se7en",
+            "genre": 3,
+            "rating": 8.9,
+            "released": "1995-09-22",
+            "description": "Two detectives hunt a killer who uses the seven deadly sins."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 44,
+        "fields": {
+            "title": "Alien",
+            "genre": 2,
+            "rating": 8.5,
+            "released": "1979-05-25",
+            "description": "The crew of a spaceship is hunted by a deadly alien creature."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 45,
+        "fields": {
+            "title": "Back to the Future",
+            "genre": 6,
+            "rating": 8.8,
+            "released": "1985-07-03",
+            "description": "A teenager travels back in time and must ensure his parents meet."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 46,
+        "fields": {
+            "title": "Blade Runner 2049",
+            "genre": 6,
+            "rating": 8.5,
+            "released": "2017-10-06",
+            "description": "A blade runner unearths a secret that could change society."
+        }
+    },
+    {
+        "model": "viewer.movie",
+        "pk": 47,
+        "fields": {
+            "title": "The Grand Budapest Hotel",
+            "genre": 1,
+            "rating": 8.1,
+            "released": "2014-03-28",
+            "description": "The adventures of a legendary hotel concierge and his protégé."
+        }
+    }
+]
