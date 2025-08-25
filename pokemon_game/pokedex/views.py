@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.views.generic import TemplateView, ListView, FormView, CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
 
-from viewer.models import TypeEffectiveness, PokemonType, Attack, Pokemon
+from pokedex.models import AttackEffect, TypeEffectiveness, PokemonType, Attack, Pokemon
 
 # Functional View
 def home_page(request):

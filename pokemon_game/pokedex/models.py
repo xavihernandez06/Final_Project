@@ -9,6 +9,11 @@ from django.db.models import (
     SET_NULL,
 )
 
+class AttackEffect(Model):
+    attack_effect = CharField(max_length=30, unique=True)
+
+    def __str__(self):
+        return self.attack_effect
 
 class TypeEffectiveness(Model):
     attack_type = ForeignKey(
@@ -34,6 +39,7 @@ class Attack(Model):
     name = CharField(max_length=50, unique=True)
     type = ForeignKey(PokemonType, on_delete=DO_NOTHING)
     power = IntegerField()
+    attack_effect = ForeignKey(AttackEffect, on_delete=DO_NOTHING)
 
     def __str__(self):
         return f"{self.name} (Power: {self.power}, Type: {self.type})"
@@ -41,6 +47,7 @@ class Attack(Model):
 
 class Pokemon(Model):
     name = CharField(max_length=128, unique=True, primary_key=True)
+    region = CharField(max_length=50)
     type_1 = ForeignKey(
         PokemonType, related_name="primary_type_pokemons", on_delete=DO_NOTHING
     )
