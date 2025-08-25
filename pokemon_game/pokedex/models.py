@@ -20,7 +20,7 @@ class TypeEffectiveness(Model):
 
 
 class PokemonType(Model):
-    name = CharField(max_length=30, unique=True)
+    name = CharField(max_length=30, unique=True, null=True, blank=True)
 
     def __str__(self):
         return self.name
@@ -30,7 +30,10 @@ class Attack(Model):
     name = CharField(max_length=50, unique=True)
     type = ForeignKey(PokemonType, on_delete=DO_NOTHING)
     power = IntegerField()
-    attack_effect = ForeignKey(StatusEffect, on_delete=DO_NOTHING, null=True, blank=True)
+    priority = FloatField(default=0.5)
+    status_effect = ForeignKey(StatusEffect, on_delete=DO_NOTHING, null=True, blank=True)
+    chance_status_effect = FloatField(default=1)
+    multiplier_status_effect = FloatField(default=0.25)
 
     def __str__(self):
         return f"{self.name} (Power: {self.power}, Type: {self.type})"
@@ -44,6 +47,7 @@ class Pokemon(Model):
     hp = IntegerField()
     attack = IntegerField()
     defense = IntegerField()
+    speed = IntegerField()
     description = TextField()
     attack_1 = ForeignKey(Attack, related_name="attack1_pokemons", on_delete=DO_NOTHING)
     attack_2 = ForeignKey(Attack, related_name="attack2_pokemons", on_delete=DO_NOTHING)
