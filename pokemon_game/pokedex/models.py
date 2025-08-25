@@ -1,10 +1,10 @@
 from django.db.models import (Model, CharField, ForeignKey, DO_NOTHING, IntegerField, FloatField, TextField, SET_NULL)
 
-class AttackEffect(Model):
-    attack_effect = CharField(max_length=30, unique=True, default="None")
+class StatusEffect(Model):
+    status_effect = CharField(max_length=30, unique=True)
 
     def __str__(self):
-        return self.attack_effect
+        return self.status_effect
 
 class TypeEffectiveness(Model):
     attack_type = ForeignKey(
@@ -30,7 +30,7 @@ class Attack(Model):
     name = CharField(max_length=50, unique=True)
     type = ForeignKey(PokemonType, on_delete=DO_NOTHING)
     power = IntegerField()
-    attack_effect = ForeignKey(AttackEffect, on_delete=DO_NOTHING, null=True, blank=True)
+    attack_effect = ForeignKey(StatusEffect, on_delete=DO_NOTHING, null=True, blank=True)
 
     def __str__(self):
         return f"{self.name} (Power: {self.power}, Type: {self.type})"
