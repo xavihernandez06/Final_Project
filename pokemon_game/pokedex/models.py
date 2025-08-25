@@ -1,7 +1,7 @@
 from django.db.models import (Model, CharField, ForeignKey, DO_NOTHING, IntegerField, FloatField, TextField, SET_NULL)
 
 class AttackEffect(Model):
-    attack_effect = CharField(max_length=30, unique=True)
+    attack_effect = CharField(max_length=30, unique=True, default="None")
 
     def __str__(self):
         return self.attack_effect
