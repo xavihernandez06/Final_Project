@@ -13,7 +13,7 @@ class TypeEffectiveness(Model):
     defense_type = ForeignKey(
         "PokemonType", related_name="takes_effective_damage_from", on_delete=DO_NOTHING
     )
-    multiplier = FloatField()
+    multiplier = FloatField(default=1)
 
     def __str__(self):
         return f"{self.attack_type.name} ➜ {self.defense_type.name}: x{self.multiplier}"
