@@ -1,5 +1,4 @@
 [
-    // Generation 1 Pokémon (Kanto)
     {
     "name": "Bulbasaur",
     "region": "Kanto",
@@ -1963,8 +1962,6 @@
     "attack_1": "Transform",
     "attack_2": "Psychic"
   },
-  
-  // Generation 2 Pokémon (Johto)
   {
     "name": "Chikorita",
     "region": "Johto",
