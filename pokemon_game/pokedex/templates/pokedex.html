@@ -31,12 +31,12 @@
                 <div class="attack"> 
                     <img src="{% static 'icons/'|add:pokemon.attack_1.type.name|lower|add:'.jpg' %}"
                         alt="{{ pokemon.attack_1.type.name }}" class="type-icon">
-                    {{pokemon.attack_1}} 
+                    {{pokemon.attack_1|safe}} 
                 </div>
                 <div class="attack"> 
                     <img src="{% static 'icons/'|add:pokemon.attack_2.type.name|lower|add:'.jpg' %}"
                         alt="{{ pokemon.attack_2.type.name }}" class="type-icon">
-                    {{pokemon.attack_2}} 
+                    {{pokemon.attack_2|safe}} 
                 </div>
             </div>
         {% endfor %}
