@@ -48,6 +48,6 @@ class Pokemon(Model):
     attack = IntegerField()
     defense = IntegerField()
     speed = IntegerField()
-    description = TextField()
+    description = TextField(default="")
     attack_1 = ForeignKey(Attack, related_name="attack1_pokemons", on_delete=DO_NOTHING)
     attack_2 = ForeignKey(Attack, related_name="attack2_pokemons", on_delete=DO_NOTHING)
