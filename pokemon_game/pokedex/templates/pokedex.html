@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pokedex</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'pokedex.css' %}">
+</head>
+<body>
+    <h1>Pokédex</h1>
+    <div style="display: flex; flex-wrap: wrap;">
+        {% for pokemon in pokemons %}
+            <div class="pokemon">
+                <h2>{{ pokemon.name }}</h2>
+                <p><strong>Region:</strong> {{ pokemon.region }}</p>
+                <p><strong>Types:</strong>
+                    <img src="{% static 'icons/'|add:pokemon.type_1.name|lower|add:'.jpg' %}" 
+                        alt="{{ pokemon.type_1.name }}" class="type-icon">
+                    {{ pokemon.type_1.name }}
+                    {% if pokemon.type_2 %}
+                        /
+                        <img src="{% static 'icons/'|add:pokemon.type_2.name|lower|add:'.jpg' %}" 
+                            alt="{{ pokemon.type_2.name }}" class="type-icon">
+                        {{ pokemon.type_2.name }}
+                    {% endif %}
+                </p>
+                <p><strong>HP:</strong> {{ pokemon.hp }}</p>
+                <p><strong>Attack:</strong> {{ pokemon.attack }}</p>
+                <p><strong>Defense:</strong> {{ pokemon.defense }}</p>
+                <p><strong>Speed:</strong> {{ pokemon.speed }}</p>
+                <p><strong>Attacks:</strong></p>
+                <div class="attack"> 
+                    <img src="{% static 'icons/'|add:pokemon.attack_1.type.name|lower|add:'.jpg' %}"
+                        alt="{{ pokemon.attack_1.type.name }}" class="type-icon">
+                    {{pokemon.attack_1}} 
+                </div>
+                <div class="attack"> 
+                    <img src="{% static 'icons/'|add:pokemon.attack_2.type.name|lower|add:'.jpg' %}"
+                        alt="{{ pokemon.attack_2.type.name }}" class="type-icon">
+                    {{pokemon.attack_2}} 
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

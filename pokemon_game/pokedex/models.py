@@ -36,7 +36,7 @@ class Attack(Model):
     multiplier_status_effect = FloatField(default=0.25)
 
     def __str__(self):
-        return f"{self.name} (Power: {self.power}, Type: {self.type})"
+        return f"{self.name} (Power: {self.power})"
 
 
 class Pokemon(Model):
