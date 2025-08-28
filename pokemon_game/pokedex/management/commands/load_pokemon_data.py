@@ -1,12 +1,12 @@
 import json
 from django.core.management.base import BaseCommand
-from models import Pokemon, PokemonType, Attack, StatusEffect
+from pokedex.models import Pokemon, PokemonType, Attack, StatusEffect, TypeEffectiveness
 
 class Command(BaseCommand):
     help = 'Load Pokemon data from JSON file'
 
     def handle(self, *args, **kwargs):
-        with open('pokemon_game/pokedex/pokemon_data.json') as f:
+        with open('pokemon_data.json') as f:
             data = json.load(f)
     
         for entry in data:

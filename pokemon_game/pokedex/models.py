@@ -51,3 +51,7 @@ class Pokemon(Model):
     description = TextField(default="")
     attack_1 = ForeignKey(Attack, related_name="attack1_pokemons", on_delete=DO_NOTHING)
     attack_2 = ForeignKey(Attack, related_name="attack2_pokemons", on_delete=DO_NOTHING)
+
+    def __str__(self):
+        return self.name
+    
