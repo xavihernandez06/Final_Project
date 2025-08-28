@@ -30,7 +30,7 @@ class Attack(Model):
     name = CharField(max_length=50, unique=True)
     type = ForeignKey(PokemonType, on_delete=DO_NOTHING)
     power = IntegerField()
-    priority = FloatField(default=0.5)
+    priority = FloatField(default=5)
     status_effect = ForeignKey(StatusEffect, on_delete=DO_NOTHING, null=True, blank=True)
     chance_status_effect = FloatField(default=1)
     multiplier_status_effect = FloatField(default=0.25)
