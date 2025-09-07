@@ -1,23 +1,11 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+</head>
+<body>
+    <h1>POKEMON WEBSITE</h1>
 
-{% block content %}
-<div class="pokedex-container">
-    {% for pokemon in object_list %}
-    <div class="pokedex-card">
-        <div class="pokemon-name">
-            <span>{{pokemon.name}}</span>
-            <span>{{pokemon.type1}}</span>
-            <span>{{pokemon.type2}}</span>
-        </div>
-        <div class="description">
-            <span>{{pokemon.description}}</span>
-        </div>
-        <div class="rating">
-            <span>{{pokemon.hp}}</span>
-            <span>{{pokemon.attack}}</span>
-            <span>{{pokemon.defense}}</span>
-        </div>
-    </div>
-    {% endfor %}
-</div>
-{% endblock %}
+    <button onclick="location.href='{% url 'pokedex' %}'">Pokedex</button>
+</body>
+</html>
