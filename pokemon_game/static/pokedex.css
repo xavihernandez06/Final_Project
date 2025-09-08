@@ -6,7 +6,11 @@ body {
 
 h1 {
     text-align: center;
-    color: #d62828;
+    color: whitesmoke;
+    background-color: #d62828;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    border-radius: 50px;
 }
 
 .pokedex-container {
@@ -53,4 +57,69 @@ h1 {
     margin-right: 5px;
     border-radius: 20px;
     padding: 2px
+}
+
+.menu-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #0077cc;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.menu-button:hover {
+  background-color: #013964;
+  transform: translateY(-2px);
+}
+
+.menu-button:active {
+  background-color: #013964;
+  transform: translateY(0);
+}
+
+.menu-button:focus {
+  outline: 2px solid #ffffff88;
+  outline-offset: 2px;
+}
+
+label, select {
+    display: inline-block;
+    margin: 10px 5px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0077cc;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+}
+
+#typeFilter {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 2px solid #333;
+    background-color: #1e1e1e;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#typeFilter:hover {
+    border-color: #ffcb05;
+    background-color: #333;
+}
+
+#typeFilter:focus {
+    outline: none;
+    border-color: #ffcb05;
+    box-shadow: 0 0 5px #ffcb05;
 }

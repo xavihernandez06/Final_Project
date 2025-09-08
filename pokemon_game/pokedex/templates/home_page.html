@@ -2,10 +2,23 @@
 <html>
 <head>
     <title>Homepage</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home_page.css' %}">
 </head>
 <body>
-    <h1>POKEMON WEBSITE</h1>
-
-    <button onclick="location.href='{% url 'pokedex' %}'">Pokedex</button>
+    <h1>POKéMON WEBSITE</h1>
+    <p class=final-project>Final Project by Andrei Gheorghiu</p>
+    <nav>
+        <a class="menu-button" onclick="location.href='{% url 'pokedex' %}'">Pokédex</a>
+        <a class="menu-button" onclick="location.href=''">My Pokémon</a>
+        <a class="menu-button" onclick="location.href=''">Create Pokémon</a>
+        <a class="menu-button" onclick="location.href=''">Play Game</a>
+    </nav>
+    <main>
+        <p>Page content goes here...</p>
+    </main>
+    <footer>
+        <p>@Andrei Gheorghiu</p>
+    </footer>
 </body>
 </html>

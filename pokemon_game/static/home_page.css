@@ -1,42 +1,69 @@
-.pokedex-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: url("/static/background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;          
 }
 
+main {
+            flex: 1;
+        }
 
-.pokedex-card {
-    width: 400px;
-    min-height: 100px;
-    height: auto;
-    padding: 8px 20px;
-    border-radius: 8px;
-    box-shadow: 5px 5px 10px rgb(45, 47, 56);
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 8px;
-
-    background-color: rgb(206, 214, 255);
+h1 {
+    text-align: center;
+    color: whitesmoke;
+    background-color: #d62828;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    border-radius: 50px;
 }
 
-.pokemon-name {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    font-size: 18px;
-    font-weight: 600;
+.final-project {
+    text-align: center;
+    color: black ;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    font-weight: 800;
 }
 
-.description {
-    font-size: 12px;
+.menu-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #0077cc;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
 }
 
-.rating {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+.menu-button:hover {
+  background-color: #013964;
+  transform: translateY(-2px);
+}
+
+.menu-button:active {
+  background-color: #013964;
+  transform: translateY(0);
+}
+
+.menu-button:focus {
+  outline: 2px solid #ffffff88;
+  outline-offset: 2px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
 }
