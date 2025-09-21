@@ -1,14 +1,22 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Create Pokémon</title>
+    <link rel="stylesheet" href="{% static 'forms.css' %}">
 </head>
 <body>
-    <h1>Create Your Pokémon</h1>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Save Pokémon</button>
-    </form>
+    <nav>
+        <a class="menu-button" href="javascript:history.back()">Go Back</a>
+    </nav>
+    <div class="form-container">
+        <h1>Create Your Pokémon</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="submit-button">Save Pokémon</button>
+        </form>
+    </div>
 </body>
 </html>
