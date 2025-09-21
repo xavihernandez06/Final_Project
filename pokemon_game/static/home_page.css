@@ -34,13 +34,12 @@ h1 {
 .menu-button {
   font-family: 'Arial', sans-serif;
   padding: 10px 20px;
-  margin: 0 10px;
+  margin: 0 30px;
   font-size: 16px;
   font-weight: bold;
   color: #ffffff;
   background-color: #0077cc;
-  border: none;
-  border-radius: 6px;
+  border-radius: 7px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
   text-decoration: none;
@@ -67,4 +66,15 @@ footer {
   color: white;
   text-align: center;
   padding: 5px;
+}
+
+nav {
+background: #1a1a2e;
+color: #fff;
+display: flex;
+align-items: center;
+padding: 1rem 2rem;
+position: sticky;      
+top: 0;
+z-index: 1000;
 }

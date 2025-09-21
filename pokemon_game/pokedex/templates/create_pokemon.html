@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Pokémon</title>
+</head>
+<body>
+    <h1>Create Your Pokémon</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save Pokémon</button>
+    </form>
+</body>
+</html>
