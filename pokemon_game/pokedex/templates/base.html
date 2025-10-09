@@ -13,9 +13,16 @@
 
 <body>
     <div class="navbar">
-        <span>Home</span>
-        <span>Welcome to Pokedex!</span>
-        <span>User</span>
+        <span><a href="{% url 'pokedex' %}">Pokédex</a></span>
+        <span><a href="#">My Pokémon</a></span>
+        <span><a href="{% url 'create_pokemon' %}">Create Pokémon</a></span>
+        <span><a href="#">Play Game</a></span>
+
+        {% if user.is_authenticated %}
+            <span>Hello, {{ user.username }} | <a href="{% url 'logout' %}">Logout</a></span>
+        {% else %}
+            <span><a href="{% url 'login' %}">Login</a></span>
+        {% endif %}
     </div>
     <div class="content">
         {% block content %}

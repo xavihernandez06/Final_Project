@@ -56,7 +56,7 @@ ROOT_URLCONF = 'pokemon_game.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'pokedex' / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
