@@ -73,8 +73,45 @@ background: #1a1a2e;
 color: #fff;
 display: flex;
 align-items: center;
-padding: 1rem 2rem;
+padding: 10px 20px;
 position: sticky;      
 top: 0;
 z-index: 1000;
+}
+
+.user-auth {
+font-family: Arial, sans-serif;
+font-size: 14px;
+color: #333;
+display: flex;
+align-items: center;
+gap: 10px;
+margin-left: auto;
+}
+
+.user-auth .greeting {
+color: #ffffff;
+}
+
+.user-auth .auth-link {
+text-decoration: none;
+padding: 6px 12px;
+border-radius: 4px;
+font-weight: 600;
+transition: background-color 0.3s ease;
+}
+
+.user-auth .login {
+background-color: #4CAF50;
+color: white;
+}
+
+.user-auth .logout {
+background-color: #f44336;
+color: white;
+}
+
+.user-auth .auth-link:hover {
+opacity: 0.8;
+cursor: pointer;
 }
