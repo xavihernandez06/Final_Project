@@ -15,4 +15,5 @@ urlpatterns = [
     path('pokedex/', pokedex_view, name='pokedex'),
     path('', home, name='home'),
     path("create/", create_pokemon, name="create_pokemon"),
+    path('accounts/', include('django.contrib.auth.urls')),
 ]
