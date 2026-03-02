@@ -16,14 +16,19 @@
         <div class="user-auth">
             {% if user.is_authenticated %}
                 <span class="greeting">Hello, <strong>{{ user.username }}</strong></span>
-                <a class="auth-link logout" href="{% url 'logout' %}">Logout</a>
+                <form method="POST" action="{% url 'logout' %}" style="display:inline;">
+                    {% csrf_token %}
+                    <button type="submit" class="auth-link logout">Logout</button>
+                </form>
             {% else %}
                 <a class="auth-link login" href="{% url 'login' %}">Login</a>
             {% endif %}
         </div>
     </nav>
-    <main>
-        <p>Page content goes here...</p>
+    <main class="new-main-section">
+        <div class="new-welcome-card">
+            <h1 class="welcome-title">Welcome to my Pokémon Database Project</h1>
+        </div>
     </main>
     <footer>
         <p>@Andrei Gheorghiu</p>

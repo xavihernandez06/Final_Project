@@ -23,6 +23,16 @@ h1 {
   border-radius: 50px;
 }
 
+.welcome-title {
+background: none !important;
+padding: 0 !important;
+margin: 0 !important;
+border-radius: 0 !important;
+text-align: center;
+color: white;
+font-size: 2rem;
+}
+
 .final-project {
   text-align: center;
   color: black ;
@@ -114,4 +124,37 @@ color: white;
 .user-auth .auth-link:hover {
 opacity: 0.8;
 cursor: pointer;
+}
+
+.new-main-section {
+display: flex;
+justify-content: center;
+padding-top: 40px;
+padding-bottom: 40px;
+}
+
+.new-welcome-card {
+position: relative;
+background: rgba(255, 255, 255, 0.15);
+border: 2px solid rgba(255, 255, 255, 0.4);
+backdrop-filter: blur(6px);
+padding: 25px 50px;
+border-radius: 15px;
+text-align: center;
+color: white;
+font-size: 1.8rem;
+font-weight: bold;
+letter-spacing: 1px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+animation: fadeIn 1.2s ease-in-out;
+background-image: url("pokeball.png");
+background-size: 220px;
+background-repeat: no-repeat;
+background-position: center 120px;
+opacity: 1;
+}
+
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(15px); }
+to { opacity: 1; transform: translateY(0); }
 }
